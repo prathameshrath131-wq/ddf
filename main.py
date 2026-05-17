@@ -7,8 +7,9 @@ def main():
 ██║░░██║██║██║░░██║╚██████╔╝██████╔╝░░░░░░╚█████╔╝██████╔╝
 ╚═╝░░╚═╝╚═╝╚═╝░░╚═╝░╚═════╝░╚═════╝░░░░░░░░╚════╝░╚═════╝░
 """)
+    name = input("Whats your name?: ")
     while True:
-        command = input("airusos> ").strip().lower()
+        command = input(f"{name}@airusos> ").strip().lower()
 
         if command == "exit":
             print("Shutting down...")
@@ -16,7 +17,7 @@ def main():
         elif command == "help":
             print("Available commands: help, exit, hello, twins, state, about user, clear")
         elif command == "hello":
-            print("Hello, user!")
+            print(f"Hello, {name}!")
         elif command == "twins":
             print("Reyansh,Ali,Aldana,Salim")
         elif command == "state":
