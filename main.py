@@ -24,6 +24,8 @@ def main():
         elif command == "about user":
             print("Hi im Kxr a 14 year old programmer who likes to make operating systems")
             print("Role: Administrator")
+        elif command == "clear":
+            print("\033[2J\033[1;1H")
         elif command == "":
             continue
         else:
