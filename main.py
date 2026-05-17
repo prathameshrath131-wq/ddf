@@ -9,28 +9,28 @@ def main():
 """)
     name = input("Whats your name?: ")
     while True:
-        command = input(f"{name}@airusos> ").strip().lower()
+        command = input(f"\n{name}@airusos> ").strip().lower()
 
         if command == "exit":
             print("Shutting down...")
             break
         elif command == "help":
-            print("Available commands: help, exit, hello, twins, state, about user, clear")
+            print("\nAvailable commands: help, exit, hello, twins, state, about user, clear")
         elif command == "hello":
-            print(f"Hello, {name}!")
+            print(f"\nHello, {name}!")
         elif command == "twins":
-            print("Reyansh,Ali,Aldana,Salim")
+            print("\nReyansh,Ali,Aldana,Salim")
         elif command == "state":
-            print("System state: Running no issues detected")
+            print("\nSystem state: Running no issues detected")
         elif command == "about user":
-            print("Hi im Kxr a 14 year old programmer who likes to make operating systems")
-            print("Role: Administrator")
+            print("\nHi im Kxr a 14 year old programmer who likes to make operating systems")
+            print("\nRole: Administrator")
         elif command == "clear":
             print("\033[2J\033[1;1H")
         elif command == "":
             continue
         else:
-            print(f"Command not found: {command}")
+            print(f"\nCommand not found: {command}")
 
 if __name__ == "__main__":
     main()
